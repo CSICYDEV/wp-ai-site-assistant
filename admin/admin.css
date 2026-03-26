@@ -1,0 +1,86 @@
+.wp-ai-site-assistant-wrap {
+  max-width: 1400px;
+}
+
+.wp-ai-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.wp-ai-panel {
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wp-ai-chat-log {
+  min-height: 260px;
+  max-height: 420px;
+  overflow: auto;
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.wp-ai-message {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.wp-ai-message.user {
+  background: #dbeafe;
+  margin-left: auto;
+}
+
+.wp-ai-message.assistant {
+  background: #f3f4f6;
+}
+
+#wp-ai-prompt {
+  width: 100%;
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+.wp-ai-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.wp-ai-proposal pre,
+.wp-ai-log-entry code {
+  display: block;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 12px;
+  border-radius: 8px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.wp-ai-log-entry {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.wp-ai-log-entry strong,
+.wp-ai-log-entry span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 960px) {
+  .wp-ai-grid {
+    grid-template-columns: 1fr;
+  }
+}
