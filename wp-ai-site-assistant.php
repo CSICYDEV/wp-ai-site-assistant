@@ -13,6 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+require_once __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$updateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/CSICYDEV/wp-ai-site-assistant/',
+	__FILE__,
+	'wp-ai-site-assistant'
+);
+
+$updateChecker->setBranch('main');
+
+
 if ( ! defined( 'WP_AI_SITE_ASSISTANT_VERSION' ) ) {
     define( 'WP_AI_SITE_ASSISTANT_VERSION', '0.1.2' );
 }
